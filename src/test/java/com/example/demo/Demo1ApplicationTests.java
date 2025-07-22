@@ -11,15 +11,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Import;
-import org.springframework.data.mongodb.core.MongoTemplate;
 
 @Import(TestcontainersConfiguration.class)
 @TestConfiguration
 @DataMongoTest
 class Demo1ApplicationTests {
 
-    @Autowired
-    MongoTemplate mongoTemplate;
     @Autowired
     private SomeDocumentRepository someDocumentRepository;
     @Autowired
