@@ -27,9 +27,9 @@ class Demo1ApplicationTests {
     private SomeDocumentRepository someDocumentRepository;
     @Autowired
     private ReferenceDocumentRepository referenceDocumentRepository;
+
     @Test
     void contextLoads() {
-
         SomeDocument document = SomeDocument.builder()
                 .text("test").build();
         SomeDocument saved = someDocumentRepository.save(document);
