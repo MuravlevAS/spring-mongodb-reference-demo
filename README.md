@@ -4,3 +4,4 @@ Mongo repository throws DuplicateKeyException when I use `save()` method with ob
 from `@DocumentReference`
 
 Failing test demonstrating the bug is here `./src/test/java/com/example/demo/Demo1ApplicationTests.java`
+https://github.com/MuravlevAS/spring-mongodb-reference-demo/blob/master/src/test/java/com/example/demo/Demo1ApplicationTests.java#L25-L45
